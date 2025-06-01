@@ -26,3 +26,38 @@ Script de respaldo automático y manual de carpetas, con barra de progreso, ejec
 Instalación:
 ```bash
 pip install tqdm
+```
+🧪 Cómo usar
+
+python auto_backup.py
+
+-Sigue las instrucciones en pantalla:  
+-Elige si deseas respaldo automático o manual.  
+-Especifica la carpeta de origen.  
+-Elige usar una carpeta existente o crear una nueva para los respaldos.  
+-Si usas modo automático, puedes:  
+  Ejecutarlo en segundo plano.  
+  Escribir stop en cualquier momento para cancelarlo.  
+    
+Registro de actividad  
+
+Todas las operaciones se registran en el archivo:
+
+    backup.log
+
+Incluye:  
+-Fecha y hora de cada respaldo  
+-Archivos respaldados  
+-Errores si los hubo
+
+⚠️ Notas  
+-En Linux o macOS, si se desea crear carpetas fuera del directorio del usuario (/), puede requerir permisos (sudo).  
+-El script se puede mejorar fácilmente para programarse con cron o el programador de tareas de Windows si se desea automatizar aún más.
+
+
+👨‍💻 Autor  
+Bryan Sandoya  
+Ingeniero en Electrónica y Comunicaciones  
+Magister en Tecnologías de la Información y Seguridad
+
+
