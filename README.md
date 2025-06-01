@@ -1,18 +1,28 @@
-# Auto Backup Script
+# 🛡️ Auto Backup Script
 
-Este script automatiza el respaldo de archivos desde una carpeta origen hacia una carpeta destino con marcas de tiempo.
+Script de respaldo automático y manual de carpetas, con barra de progreso, ejecución en segundo plano y cancelación interactiva. Compatible con **Windows**, **Linux** y **macOS**.
 
-## Uso
+---
 
-1. Coloca los archivos en la carpeta `test_folder`.
-2. Ejecuta el script con `python backup.py`.
-3. Los respaldos se guardan en la carpeta `respaldo` con la fecha y hora.
+## 🚀 Funcionalidades
 
-## Requisitos
+✅ Respaldo **manual** o **automático** cada N minutos  
+✅ Opción de **ejecutar en segundo plano** para liberar la terminal  
+✅ Comando `stop` para cancelar el respaldo automático  
+✅ Elección de **carpeta de origen** y **destino**  
+✅ Crea carpeta destino si no existe  
+✅ Compatible con rutas de **Windows o Linux**  
+✅ Barra de progreso visual con `tqdm`  
+✅ Registro de actividad en `backup.log`  
+✅ Control de cancelación con la tecla `q`  
 
-- Python 3.x
+---
 
-## Próximos pasos
+## 📦 Requisitos
 
-- Integración con Google Drive o Dropbox
-- Automatización con cron en Linux o tareas programadas en Windows
+- Python 3.7 o superior
+- Biblioteca `tqdm`
+
+Instalación:
+```bash
+pip install tqdm
